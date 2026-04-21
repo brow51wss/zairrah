@@ -8,16 +8,19 @@ const slides = [
     image:
       'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-assets/photos/Reco%20Modeling/1776765189289-4-1.jpg',
     label: 'Fashion',
+    position: 'object-left',
   },
   {
     image:
       'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-assets/photos/Reco%20Modeling/1776765189289-4.jpg',
     label: 'Editorial',
+    position: 'object-center',
   },
   {
     image:
       'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-assets/photos/Reco%20Modeling/1776765189289-6.jpg',
     label: 'Commercial',
+    position: 'object-right',
   },
 ]
 
@@ -47,7 +50,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative h-screen min-h-[640px] overflow-hidden bg-[#121212]"
+      className="relative h-screen min-h-[400px] lg:max-h-[700px] lg:min-h-[500px] overflow-hidden bg-[#121212]"
       aria-label="Hero"
     >
       {slides.map((slide, i) => (
@@ -61,7 +64,7 @@ export default function HeroSection() {
           <img
             src={slide.image}
             alt={`Reco Modeling — ${slide.label}`}
-            className="w-full h-full object-cover object-top"
+            className={`w-full h-full object-cover object-top lg:object-contain lg:${slide.position}`}
           />
           <div className="absolute inset-0 bg-[#121212]/60" />
         </div>

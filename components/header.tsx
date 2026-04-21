@@ -14,11 +14,32 @@ const navLinks = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState<string>('')
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const ids = navLinks.map((l) => l.href.replace('#', ''))
+    const observers: IntersectionObserver[] = []
+
+    ids.forEach((id) => {
+      const el = document.getElementById(id)
+      if (!el) return
+      const obs = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id)
+        },
+        { rootMargin: '-40% 0px -55% 0px' }
+      )
+      obs.observe(el)
+      observers.push(obs)
+    })
+
+    return () => observers.forEach((o) => o.disconnect())
   }, [])
 
   const handleNav = (href: string) => {
@@ -49,15 +70,29 @@ export default function Header() {
           </a>
 
           <nav className="hidden md:flex items-center gap-10" aria-label="Main navigation">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => handleNav(link.href)}
-                className="text-[#888888] hover:text-[#d0d0d0] text-xs font-medium tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer"
-              >
-                {link.label}
-              </button>
-            ))}
+            {navLinks.map((link) => {
+              const id = link.href.replace('#', '')
+              const isActive = activeSection === id
+              return (
+                <button
+                  key={link.href}
+                  onClick={() => handleNav(link.href)}
+                  className="relative text-xs font-medium tracking-[0.2em] uppercase transition-colors duration-300 cursor-pointer group pb-0.5"
+                  style={{ color: isActive ? '#d0d0d0' : '#888888' }}
+                  aria-current={isActive ? 'true' : undefined}
+                >
+                  {link.label}
+                  <span
+                    className="absolute bottom-0 left-0 h-px bg-[#d0d0d0] transition-all duration-300"
+                    style={{ width: isActive ? '100%' : '0%' }}
+                  />
+                  {/* hover underline for non-active */}
+                  {!isActive && (
+                    <span className="absolute bottom-0 left-0 h-px bg-[#d0d0d0]/40 w-0 group-hover:w-full transition-all duration-300" />
+                  )}
+                </button>
+              )
+            })}
             <button
               onClick={() => handleNav('#contact')}
               className="ml-4 px-6 py-2.5 bg-[#d0d0d0] text-[#121212] text-xs font-semibold tracking-[0.15em] uppercase hover:bg-white transition-colors duration-300"
@@ -80,15 +115,22 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden bg-[#121212]/98 backdrop-blur-md border-t border-[#2a2a2a]">
           <nav className="flex flex-col px-6 py-6 gap-6" aria-label="Mobile navigation">
-            {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => handleNav(link.href)}
-                className="text-[#888888] hover:text-[#d0d0d0] text-xs font-medium tracking-[0.2em] uppercase transition-colors duration-300 text-left cursor-pointer"
-              >
-                {link.label}
-              </button>
-            ))}
+            {navLinks.map((link) => {
+              const id = link.href.replace('#', '')
+              const isActive = activeSection === id
+              return (
+                <button
+                  key={link.href}
+                  onClick={() => handleNav(link.href)}
+                  className="flex items-center gap-3 text-xs font-medium tracking-[0.2em] uppercase transition-colors duration-300 text-left cursor-pointer"
+                  style={{ color: isActive ? '#d0d0d0' : '#888888' }}
+                  aria-current={isActive ? 'true' : undefined}
+                >
+                  {isActive && <span className="w-4 h-px bg-[#d0d0d0] shrink-0" />}
+                  {link.label}
+                </button>
+              )
+            })}
             <button
               onClick={() => handleNav('#contact')}
               className="mt-2 px-6 py-3 bg-[#d0d0d0] text-[#121212] text-xs font-semibold tracking-[0.15em] uppercase w-full hover:bg-white transition-colors duration-300"
