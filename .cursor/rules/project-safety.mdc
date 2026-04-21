@@ -1,0 +1,28 @@
+---
+description: Project safety boundaries and integration context
+alwaysApply: true
+---
+
+# Project Safety
+
+**CRITICAL**: Never edit, create, or remove files and folders outside:
+
+```
+/Users/marlonsarmiento/Desktop/reco
+```
+
+All file operations must stay within this directory. If asked to work on files outside this path, decline and remind the user of this safety boundary.
+
+# Project Integrations
+
+## Environment
+
+- **Hosting**: Vercel Pro
+
+## Repository
+
+- **GitHub**: https://github.com/brow51wss/reco.git
+
+## Services
+
+- **Email**: Resend.com
