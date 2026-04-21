@@ -8,19 +8,19 @@ const slides = [
     image:
       'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-assets/photos/Reco%20Modeling/1776765189289-4-1.jpg',
     label: 'Fashion',
-    position: 'object-left',
+    desktopPosition: 'lg:object-left',
   },
   {
     image:
       'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-assets/photos/Reco%20Modeling/1776765189289-4.jpg',
     label: 'Editorial',
-    position: 'object-center',
+    desktopPosition: 'lg:object-center',
   },
   {
     image:
       'https://fwndqprdqitzrprauvqy.supabase.co/storage/v1/object/public/brand-assets/photos/Reco%20Modeling/1776765189289-6.jpg',
     label: 'Commercial',
-    position: 'object-right',
+    desktopPosition: 'lg:object-right',
   },
 ]
 
@@ -64,7 +64,7 @@ export default function HeroSection() {
           <img
             src={slide.image}
             alt={`Reco Modeling — ${slide.label}`}
-            className={`w-full h-full object-cover object-top lg:object-contain lg:${slide.position}`}
+            className={`w-full h-full object-cover object-top lg:object-contain ${slide.desktopPosition}`}
           />
           <div className="absolute inset-0 bg-[#121212]/60" />
         </div>
