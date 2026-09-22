@@ -1038,7 +1038,7 @@
       const t = (50 + this._view.y) + '%';
       this._img.style.width = w; this._img.style.height = h;
       this._img.style.left = l; this._img.style.top = t;
-      this._img.style.objectFit = '';
+      this._img.style.objectFit = 'cover';
       if (this.hasAttribute('data-reframe')) {
         // Top-layer spill: position in viewport px over the frame. The top
         // layer escapes ancestor transforms entirely, so EVERY term must be

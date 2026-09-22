@@ -37,7 +37,31 @@ body { padding-top: 52px; }
   padding:36px 0 0;margin-top:28px;border-top:1px solid #EAE4DC;
   font-size:11px;letter-spacing:0.22em;text-transform:uppercase;
 }
-@media (max-width:720px) { .za-nav { padding:14px 22px; } }
+img {
+  max-width:100%;
+  height:auto !important;
+  object-fit:contain;
+  flex:0 0 auto;
+}
+.za-fit { max-width:100%; height:auto; width:auto; object-fit:contain; }
+.za-slot, .za-ig { position:relative; min-width:0; }
+.za-slot image-slot, .za-ig image-slot { aspect-ratio:auto; }
+.za-slot-tall { height:420px; }
+.za-slot-short { height:200px; }
+.za-slot-row { height:240px; }
+.za-slot-45 { height:210px; }
+.za-slot-11 { height:210px; }
+.za-ig { aspect-ratio:1/1; }
+@media (max-width:720px) {
+  .za-nav { padding:14px 22px; }
+  .za-slot-tall, .za-slot-short, .za-slot-row, .za-slot-45, .za-slot-11 { height:auto; }
+  .za-ratio-45 { aspect-ratio:819/1024; }
+  .za-ratio-32 { aspect-ratio:1024/682; }
+  .za-ratio-54 { aspect-ratio:1024/819; }
+  .za-ig-grid { grid-template-columns:1fr !important; }
+  .za-logo-tile { height:auto !important; aspect-ratio:1.55/1; }
+  .za-page { padding-left:22px !important; padding-right:22px !important; }
+}
 </style>
 <script src="./image-slot.js"></script>
 </helmet>
@@ -50,7 +74,7 @@ body { padding-top: 52px; }
   </div>
 </nav>
 
-<div style="max-width:1280px;margin:0 auto;padding:0 40px 120px;font-family:Jost,sans-serif;font-weight:300;color:#2D2523">
+<div class="za-page" style="max-width:1280px;margin:0 auto;padding:0 40px 120px;font-family:Jost,sans-serif;font-weight:300;color:#2D2523">
 
   <div style="min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:56px 0 80px">
     <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#6B635C">
@@ -144,32 +168,32 @@ body { padding-top: 52px; }
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
       <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
-        <div style="position:relative;height:420px"><image-slot id="zb-mood-1" shape="rect" src="./assets/mood-luminous-skin.webp" placeholder="Luminous skin &#8212; close crop, natural light, dewy finish"></image-slot></div>
+        <div class="za-slot za-slot-tall za-ratio-45"><image-slot id="zb-mood-1" shape="rect" src="./assets/mood-luminous-skin.webp" placeholder="Luminous skin &#8212; close crop, natural light, dewy finish"></image-slot></div>
         <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Luminous Skin</span><span style="color:#C9A96A">01</span></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:20px">
         <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="position:relative;height:200px"><image-slot id="zb-mood-2" shape="rect" src="./assets/mood-soft-glam.webp" placeholder="Soft glam &#8212; sculpted, camera-ready, three-quarter"></image-slot></div>
+          <div class="za-slot za-slot-short za-ratio-32"><image-slot id="zb-mood-2" shape="rect" src="./assets/mood-soft-glam.webp" placeholder="Soft glam &#8212; sculpted, camera-ready, three-quarter"></image-slot></div>
           <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Soft Glam</span><span style="color:#C9A96A">02</span></div>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="position:relative;height:200px"><image-slot id="zb-mood-3" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="Detail &#8212; lash line or nail macro on neutral ground"></image-slot></div>
+          <div class="za-slot za-slot-short za-ratio-32"><image-slot id="zb-mood-3" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="Detail &#8212; lash line or nail macro on neutral ground"></image-slot></div>
           <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Detail Work</span><span style="color:#C9A96A">03</span></div>
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
-        <div style="position:relative;height:420px"><image-slot id="zb-mood-4" shape="rect" src="./assets/mood-bridal.webp" placeholder="Bridal &#8212; veil, silk, movement, timeless finish"></image-slot></div>
+        <div class="za-slot za-slot-tall za-ratio-45"><image-slot id="zb-mood-4" shape="rect" src="./assets/mood-bridal.webp" placeholder="Bridal &#8212; veil, silk, movement, timeless finish"></image-slot></div>
         <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Bridal Couture</span><span style="color:#C9A96A">04</span></div>
       </div>
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
       <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
-        <div style="position:relative;height:240px"><image-slot id="zb-mood-5" shape="rect" src="./assets/mood-hair.webp" placeholder="Hair &#8212; smooth blowout, structured cut, movement"></image-slot></div>
+        <div class="za-slot za-slot-row za-ratio-54"><image-slot id="zb-mood-5" shape="rect" src="./assets/mood-hair.webp" placeholder="Hair &#8212; smooth blowout, structured cut, movement"></image-slot></div>
         <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Hair in Motion</span><span style="color:#C9A96A">05</span></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
-        <div style="position:relative;height:240px"><image-slot id="zb-mood-6" shape="rect" src="./assets/mood-material.webp" placeholder="Material &#8212; pearl, silk, brushed gold, stone"></image-slot></div>
+        <div class="za-slot za-slot-row za-ratio-54"><image-slot id="zb-mood-6" shape="rect" src="./assets/mood-material.webp" placeholder="Material &#8212; pearl, silk, brushed gold, stone"></image-slot></div>
         <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Material Study</span><span style="color:#C9A96A">06</span></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px">
@@ -246,33 +270,33 @@ body { padding-top: 52px; }
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
       <div style="display:flex;flex-direction:column;gap:16px">
-        <div style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:#2D2523;overflow:hidden">
-          <img src="./assets/zairrah-logo-reverse.png" alt="Zairrah reversed logo" style="width:100%;max-width:100%;height:auto;display:block">
+        <div class="za-logo-tile" style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:#2D2523;overflow:hidden">
+          <img src="./assets/zairrah-logo-reverse.png" alt="Zairrah reversed logo" class="za-fit" style="width:100%;display:block">
         </div>
         <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Reversed &#8212; ink ground</div>
         <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Wing stays gold. Wordmark becomes bone. Never invert the wing to white.</div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:16px">
-        <div style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:#FFFFFF;overflow:hidden">
-          <img src="./assets/zairrah-mark.png" alt="Zairrah phoenix mark" style="width:auto;height:168px;max-width:100%;display:block">
+        <div class="za-logo-tile" style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:#FFFFFF;overflow:hidden">
+          <img src="./assets/zairrah-mark.png" alt="Zairrah phoenix mark" class="za-fit" style="max-height:168px;display:block">
         </div>
         <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Phoenix mark &#8212; standalone</div>
         <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Favicon, social avatar, packaging seal, watermark on imagery at 12% opacity.</div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:16px">
-        <div style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:linear-gradient(135deg,#FDFCFA 0%,#F6EDE8 35%,#EDEFF0 68%,#F7F0E3 100%);overflow:hidden">
-          <img src="./assets/zairrah-wordmark.png" alt="Zairrah wordmark" style="width:100%;max-width:100%;height:auto;display:block">
+        <div class="za-logo-tile" style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:linear-gradient(135deg,#FDFCFA 0%,#F6EDE8 35%,#EDEFF0 68%,#F7F0E3 100%);overflow:hidden">
+          <img src="./assets/zairrah-wordmark.png" alt="Zairrah wordmark" class="za-fit" style="width:100%;display:block">
         </div>
         <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Wordmark only</div>
         <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Where the mark would compete &#8212; narrow site headers, email signatures, invoice headers.</div>
       </div>
 
       <div style="display:flex;flex-direction:column;gap:16px">
-        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;height:240px;padding:28px;border:1px solid #EFE9E1;background:#FFFFFF;overflow:hidden">
-          <img src="./assets/zairrah-mark.png" alt="" style="height:88px;width:auto;max-width:100%;display:block;flex:0 0 auto">
-          <img src="./assets/zairrah-wordmark.png" alt="Zairrah" style="width:min(170px,100%);height:auto;display:block">
+        <div class="za-logo-tile" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;height:240px;padding:28px;border:1px solid #EFE9E1;background:#FFFFFF;overflow:hidden">
+          <img src="./assets/zairrah-mark.png" alt="" class="za-fit" style="max-height:88px;display:block;flex:0 0 auto">
+          <img src="./assets/zairrah-wordmark.png" alt="Zairrah" class="za-fit" style="width:min(170px,100%);display:block">
         </div>
         <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Stacked lockup</div>
         <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Square formats: signage, Instagram profile, packaging face. Mark above, wordmark centered beneath.</div>
@@ -434,8 +458,8 @@ body { padding-top: 52px; }
       <div style="display:flex;flex-direction:column;gap:22px">
         <div style="font-family:'Bodoni Moda',serif;font-size:26px;line-height:1.3">Crops</div>
         <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px">
-          <div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="position:relative;height:210px;min-width:0"><image-slot id="zb-photo-1" shape="rect" src="./assets/mood-luminous-skin.webp" placeholder="4:5 portrait &#8212; site hero, Instagram feed"></image-slot></div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6B635C">4:5 Portrait</span></div>
-          <div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="position:relative;height:210px;min-width:0"><image-slot id="zb-photo-2" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="1:1 detail &#8212; lash, nail, brow macro"></image-slot></div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6B635C">1:1 Detail</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div class="za-slot za-slot-45 za-ratio-45"><image-slot id="zb-photo-1" shape="rect" src="./assets/mood-luminous-skin.webp" placeholder="4:5 portrait &#8212; site hero, Instagram feed"></image-slot></div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6B635C">4:5 Portrait</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div class="za-slot za-slot-11 za-ratio-32"><image-slot id="zb-photo-2" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="1:1 detail &#8212; lash, nail, brow macro"></image-slot></div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6B635C">1:1 Detail</span></div>
         </div>
       </div>
     </div>
@@ -513,12 +537,12 @@ body { padding-top: 52px; }
 
     <div style="display:flex;flex-direction:column;gap:16px;padding-top:16px">
       <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">Instagram grid rhythm</div>
-      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:520px">
-        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-1" shape="rect" src="./assets/mood-soft-glam.webp" placeholder="Portrait"></image-slot></div>
+      <div class="za-ig-grid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:520px">
+        <div class="za-ig za-ratio-32"><image-slot id="zb-ig-1" shape="rect" src="./assets/mood-soft-glam.webp" placeholder="Portrait"></image-slot></div>
         <div style="aspect-ratio:1/1;background:#FFFFFF;border:1px solid #EFE9E1;display:flex;align-items:center;justify-content:center;padding:14px"><span style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:14px;color:#6B635C;text-align:center;line-height:1.5">Skin that reflects light.</span></div>
-        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-2" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="Detail"></image-slot></div>
-        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-3" shape="rect" src="./assets/mood-bridal.webp" placeholder="Bridal"></image-slot></div>
-        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-4" shape="rect" src="./assets/mood-hair.webp" placeholder="Hair"></image-slot></div>
+        <div class="za-ig za-ratio-32"><image-slot id="zb-ig-2" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="Detail"></image-slot></div>
+        <div class="za-ig za-ratio-45"><image-slot id="zb-ig-3" shape="rect" src="./assets/mood-bridal.webp" placeholder="Bridal"></image-slot></div>
+        <div class="za-ig za-ratio-54"><image-slot id="zb-ig-4" shape="rect" src="./assets/mood-hair.webp" placeholder="Hair"></image-slot></div>
         <div style="aspect-ratio:1/1;background:#2D2523;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden"><img src="./assets/zairrah-mark.png" alt="" style="width:46%;max-width:46%;height:auto;display:block"></div>
       </div>
       <div style="font-size:13.5px;line-height:1.7;color:#6B635C;max-width:52ch;text-wrap:pretty">Every third tile is quiet &#8212; a typographic card or the phoenix mark. The grid should read as a page, not a feed.</div>
