@@ -17,9 +17,38 @@
 body { margin:0; background:#FBFAF8; color:#2D2523; -webkit-font-smoothing:antialiased; }
 a { color:#A8874B; text-decoration:none; }
 a:hover { color:#2D2523; }
+body { padding-top: 52px; }
+.za-nav {
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  box-sizing:border-box;
+  display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;
+  padding:16px 40px;
+  background:rgba(251,250,248,0.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #EAE4DC;
+  font-family:Jost,sans-serif;font-weight:300;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;
+}
+.za-nav-links { display:flex;gap:28px;flex-wrap:wrap; }
+.za-nav a { color:#6B635C; }
+.za-nav a:hover { color:#2D2523; }
+.za-nav a[aria-current="page"] { color:#2D2523; }
+.za-cross {
+  display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;
+  padding:36px 0 0;margin-top:28px;border-top:1px solid #EAE4DC;
+  font-size:11px;letter-spacing:0.22em;text-transform:uppercase;
+}
+@media (max-width:720px) { .za-nav { padding:14px 22px; } }
 </style>
 <script src="./image-slot.js"></script>
 </helmet>
+
+<nav class="za-nav" aria-label="Brand documents">
+  <a href="/brand-guide">Zairrah</a>
+  <div class="za-nav-links">
+    <a href="/brand-guide/Zairrah-Brand-Guide.dc.html" aria-current="page">Brand Guide</a>
+    <a href="/brand-guide/Zairrah-Brand-Applications.dc.html">Moodboard</a>
+  </div>
+</nav>
 
 <div style="max-width:1280px;margin:0 auto;padding:0 40px 120px;font-family:Jost,sans-serif;font-weight:300;color:#2D2523">
 
@@ -537,6 +566,10 @@ a:hover { color:#2D2523; }
     <img src="./assets/zairrah-wordmark.png" alt="Zairrah" style="width:min(220px,60%);height:auto;display:block;padding-top:10px">
     <div style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">
       <span>1128 Nuuanu Ave, Suite 102</span><span>Honolulu HI 96817</span><span>(808) 725-8661</span>
+    </div>
+    <div class="za-cross">
+      <a href="/brand-guide">Index</a>
+      <a href="/brand-guide/Zairrah-Brand-Applications.dc.html">Open the moodboard</a>
     </div>
   </div>
 

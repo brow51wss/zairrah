@@ -17,9 +17,38 @@
 body { margin:0; background:#F4F2EE; color:#2D2523; -webkit-font-smoothing:antialiased; }
 a { color:#A8874B; text-decoration:none; }
 a:hover { color:#2D2523; }
+body { padding-top: 52px; }
+.za-nav {
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  box-sizing:border-box;
+  display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;
+  padding:16px 40px;
+  background:rgba(244,242,238,0.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #E2DCD3;
+  font-family:Jost,sans-serif;font-weight:300;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;
+}
+.za-nav-links { display:flex;gap:28px;flex-wrap:wrap; }
+.za-nav a { color:#6B635C; }
+.za-nav a:hover { color:#2D2523; }
+.za-nav a[aria-current="page"] { color:#2D2523; }
+.za-cross {
+  display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;
+  padding:48px 0 0;margin-top:8px;
+  font-size:11px;letter-spacing:0.22em;text-transform:uppercase;
+}
+@media (max-width:720px) { .za-nav { padding:14px 22px; } }
 </style>
 <script src="./image-slot.js"></script>
 </helmet>
+
+<nav class="za-nav" aria-label="Brand documents">
+  <a href="/brand-guide">Zairrah</a>
+  <div class="za-nav-links">
+    <a href="/brand-guide/Zairrah-Brand-Guide.dc.html">Brand Guide</a>
+    <a href="/brand-guide/Zairrah-Brand-Applications.dc.html" aria-current="page">Moodboard</a>
+  </div>
+</nav>
 
 <div style="max-width:1280px;margin:0 auto;padding:0 40px 120px;font-family:Jost,sans-serif;font-weight:300;color:#2D2523">
 
@@ -176,6 +205,10 @@ a:hover { color:#2D2523; }
 
     </div>
     <div style="font-size:13px;line-height:1.7;color:#5C554F;max-width:60ch;text-wrap:pretty">One rule across packaging: the wing appears once per surface, in gold. The wordmark keeps its native rose-to-espresso gradient on light stock and drops to bone on dark stock. It is never reset in solid gold — the wing is the only gold element.</div>
+    <div class="za-cross">
+      <a href="/brand-guide">Index</a>
+      <a href="/brand-guide/Zairrah-Brand-Guide.dc.html">Open the brand guide</a>
+    </div>
   </div>
 
 </div>
