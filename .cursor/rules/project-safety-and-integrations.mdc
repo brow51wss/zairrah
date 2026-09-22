@@ -1,0 +1,35 @@
+---
+description: Workspace safety boundary and project integrations (Vercel, GitHub, Resend)
+alwaysApply: true
+---
+
+# Project safety
+
+**CRITICAL**: Never edit, create, or remove files and folders outside:
+
+```
+/Users/marlonsarmiento/Desktop/Projects/zairrah
+```
+
+All file operations must stay within this directory. If asked to work on files outside this path, decline and remind the user of this safety boundary.
+
+## Examples
+
+- ❌ Editing `~/.zshrc`, `/tmp/foo`, or another repo path → decline; explain the boundary.
+- ✅ All reads/writes under `wss` only.
+
+# Project integrations
+
+## Environment
+
+- **Hosting**: Vercel Pro
+
+## Repository
+
+- **GitHub**: https://github.com/brow51wss/zairrah.git
+
+## Services
+
+- **Email**: Resend.com
+
+When suggesting deploys, CI, or repo links, prefer this GitHub URL. When email or transactional mail comes up, assume Resend. When hosting or preview URLs matter, assume Vercel Pro.
