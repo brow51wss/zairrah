@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://recomodeling.com'),
-  title: 'Reco Modeling | Professional Model Management & Talent Representation',
+  title: 'Zairrah Beauty | Soft Glam · Hair · Bridal · Lashes · Nails',
   description:
     'Reco Modeling offers personalized model management, talent representation, portfolio development, and career guidance for aspiring and established models in fashion, editorial, and commercial media.',
   generator: 'v0.app',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://recomodeling.com',
-    siteName: 'Reco Modeling',
-    title: 'Reco Modeling | Professional Model Management & Talent Representation',
+    siteName: 'Zairrah Beauty',
+    title: 'Zairrah Beauty | Soft Glam · Hair · Bridal · Lashes · Nails',
     description:
       'Personalized model management and talent representation — helping models achieve their fullest potential in fashion, advertising, and global media.',
     images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@recomodeling',
     creator: '@recomodeling',
-    title: 'Reco Modeling | Professional Model Management & Talent Representation',
+    title: 'Zairrah Beauty | Soft Glam · Hair · Bridal · Lashes · Nails',
     description:
       'Personalized model management and talent representation — helping models achieve their fullest potential in fashion, advertising, and global media.',
     images: [
@@ -103,7 +103,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
         <meta name="theme-color" content="#121212" />
-        <title>Reco Modeling | Professional Model Management & Talent Representation</title>
+        <title>Zairrah Beauty | Soft Glam · Hair · Bridal · Lashes · Nails</title>
         <meta
           name="description"
           content="Reco Modeling offers personalized model management, talent representation, portfolio development, and career guidance for aspiring and established models in fashion, editorial, and commercial media."
@@ -117,7 +117,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://recomodeling.com" />
         <meta
           property="og:title"
-          content="Reco Modeling | Professional Model Management & Talent Representation"
+          content="Zairrah Beauty | Soft Glam · Hair · Bridal · Lashes · Nails"
         />
         <meta
           property="og:description"
@@ -130,7 +130,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Reco Modeling | Professional Model Management & Talent Representation"
+          content="Zairrah Beauty | Soft Glam · Hair · Bridal · Lashes · Nails"
         />
         <meta
           name="twitter:description"
