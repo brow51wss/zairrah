@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+body { margin:0; background:#FBFAF8; color:#2D2523; -webkit-font-smoothing:antialiased; }
+a { color:#A8874B; text-decoration:none; }
+a:hover { color:#2D2523; }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="max-width:1280px;margin:0 auto;padding:0 40px 120px;font-family:Jost,sans-serif;font-weight:300;color:#2D2523">
+
+  <div style="min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:56px 0 80px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:#6B635C">
+      <span>Brand Guide</span>
+      <span>Honolulu, Hawai&#8216;i</span>
+      <span>2026 Edition</span>
+    </div>
+
+    <div style="display:flex;flex-direction:column;align-items:center;gap:36px;padding:40px 0">
+      <img src="./assets/zairrah-logo.png" alt="Zairrah" style="width:min(680px,100%);height:auto;display:block">
+      <div style="width:120px;height:1px;background:#E3CDA4"></div>
+      <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:clamp(17px,2.2vw,26px);color:#5C554F;text-align:center;max-width:620px;text-wrap:pretty">Soft glam that looks like you, but elevated.</div>
+    </div>
+
+    <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#6B635C">
+      <span>Soft Glam</span><span>&#183;</span><span>Hair</span><span>&#183;</span><span>Bridal</span><span>&#183;</span><span>Lashes</span><span>&#183;</span><span>Nails</span><span>&#183;</span><span>Esthetics</span>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:36px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">01</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">The Brand</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:64px">
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <div style="font-family:'Bodoni Moda',serif;font-size:clamp(26px,3.4vw,42px);line-height:1.22;text-wrap:pretty">A minimal luxury beauty house.</div>
+        <div style="font-size:16px;line-height:1.75;color:#5C554F;max-width:44ch;text-wrap:pretty">Zairrah Beauty specializes in soft glam, hair design, bridal artistry, eyelash extensions, nail care, and advanced esthetics. The approach is clean, intentional, and editorial &#8212; beauty that enhances without overwhelming.</div>
+        <div style="font-size:16px;line-height:1.75;color:#5C554F;max-width:44ch;text-wrap:pretty">Every service is crafted to look polished in person and flawless on camera.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:28px;border-left:1px solid #EAE4DC;padding-left:40px">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">Essence</div>
+          <div style="font-family:'Bodoni Moda',serif;font-size:22px">Elevated simplicity</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">Promise</div>
+          <div style="font-size:16px;line-height:1.7;color:#5C554F;text-wrap:pretty">Beauty designed to elevate your presence &#8212; not change it.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">The Artist</div>
+          <div style="font-size:16px;line-height:1.7;color:#5C554F;text-wrap:pretty">Licensed esthetician, cosmetologist, and beauty instructor. Technical precision, minimal editorial sensibility.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">02</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Aesthetic Pillars</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:#EAE4DC;border:1px solid #EAE4DC">
+      <div style="background:#FBFAF8;padding:36px 24px;display:flex;flex-direction:column;gap:14px;min-height:190px">
+        <span style="font-family:'Bodoni Moda',serif;font-size:12px;color:#C9A96A">i</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:21px;line-height:1.3">Luminous skin</span>
+        <span style="font-size:13.5px;line-height:1.65;color:#6B635C;text-wrap:pretty">Light is the finish. Never matte, never heavy.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:36px 24px;display:flex;flex-direction:column;gap:14px;min-height:190px">
+        <span style="font-family:'Bodoni Moda',serif;font-size:12px;color:#C9A96A">ii</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:21px;line-height:1.3">Balanced structure</span>
+        <span style="font-size:13.5px;line-height:1.65;color:#6B635C;text-wrap:pretty">Proportion first. Sculpt to the face, not the trend.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:36px 24px;display:flex;flex-direction:column;gap:14px;min-height:190px">
+        <span style="font-family:'Bodoni Moda',serif;font-size:12px;color:#C9A96A">iii</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:21px;line-height:1.3">Soft dimension</span>
+        <span style="font-size:13.5px;line-height:1.65;color:#6B635C;text-wrap:pretty">Depth built in gradients, never in hard edges.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:36px 24px;display:flex;flex-direction:column;gap:14px;min-height:190px">
+        <span style="font-family:'Bodoni Moda',serif;font-size:12px;color:#C9A96A">iv</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:21px;line-height:1.3">Clean lines</span>
+        <span style="font-size:13.5px;line-height:1.65;color:#6B635C;text-wrap:pretty">Shape, lash, and nail all read as one drawn line.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:36px 24px;display:flex;flex-direction:column;gap:14px;min-height:190px">
+        <span style="font-family:'Bodoni Moda',serif;font-size:12px;color:#C9A96A">v</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:21px;line-height:1.3">Elevated simplicity</span>
+        <span style="font-size:13.5px;line-height:1.65;color:#6B635C;text-wrap:pretty">Remove until only the intentional remains.</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">03</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Moodboard</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap">
+      <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:clamp(20px,2.6vw,30px);color:#5C554F;max-width:30ch;line-height:1.35;text-wrap:pretty">Luminous, structured, quietly metallic.</div>
+      <div style="font-size:12px;line-height:1.7;color:#6B635C;max-width:34ch;text-wrap:pretty">Eight territories. Drag an image onto any frame to fill it &#8212; the caption describes what belongs there.</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+        <div style="position:relative;height:420px"><image-slot id="zb-mood-1" shape="rect" src="./assets/mood-luminous-skin.webp" placeholder="Luminous skin &#8212; close crop, natural light, dewy finish"></image-slot></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Luminous Skin</span><span style="color:#C9A96A">01</span></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="position:relative;height:200px"><image-slot id="zb-mood-2" shape="rect" src="./assets/mood-soft-glam.webp" placeholder="Soft glam &#8212; sculpted, camera-ready, three-quarter"></image-slot></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Soft Glam</span><span style="color:#C9A96A">02</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="position:relative;height:200px"><image-slot id="zb-mood-3" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="Detail &#8212; lash line or nail macro on neutral ground"></image-slot></div>
+          <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Detail Work</span><span style="color:#C9A96A">03</span></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative;height:420px"><image-slot id="zb-mood-4" shape="rect" src="./assets/mood-bridal.webp" placeholder="Bridal &#8212; veil, silk, movement, timeless finish"></image-slot></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Bridal Couture</span><span style="color:#C9A96A">04</span></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+        <div style="position:relative;height:240px"><image-slot id="zb-mood-5" shape="rect" src="./assets/mood-hair.webp" placeholder="Hair &#8212; smooth blowout, structured cut, movement"></image-slot></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Hair in Motion</span><span style="color:#C9A96A">05</span></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative;height:240px"><image-slot id="zb-mood-6" shape="rect" src="./assets/mood-material.webp" placeholder="Material &#8212; pearl, silk, brushed gold, stone"></image-slot></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Material Study</span><span style="color:#C9A96A">06</span></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="height:240px;background:linear-gradient(135deg,#FDFCFA 0%,#F6EDE8 24%,#F0E6E2 42%,#EDEFF0 62%,#F7F0E3 82%,#FBF8F4 100%);border:1px solid #EFE9E1"></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Iridescence</span><span style="color:#C9A96A">07</span></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="height:240px;background:#FBFAF8;border:1px solid #EFE9E1;display:flex;align-items:center;justify-content:center;padding:28px">
+          <span style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:19px;line-height:1.5;color:#6B635C;text-align:center;text-wrap:pretty">A calm environment.<br>A refined aesthetic.<br>A focus on detail.</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C"><span>Negative Space</span><span style="color:#C9A96A">08</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">04</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Elemental Language</span>
+    </div>
+    <div style="font-size:15px;line-height:1.75;color:#5C554F;max-width:62ch;text-wrap:pretty">The phoenix carries four elements. Each one governs a specific design decision, so the identity stays coherent as it stretches across web, print, and packaging.</div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:20px;padding:32px;border:1px solid #EFE9E1;background:linear-gradient(160deg,#FFFFFF 0%,#FCF8F1 100%)">
+        <div style="width:44px;height:44px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#FFFFFF 0%,#FAF2E2 45%,#E3CDA4 100%)"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-family:'Bodoni Moda',serif;font-size:24px">Fire</span>
+          <span style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#C9A96A">White flame</span>
+        </div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">The phoenix wing itself. Champagne gold, diamond shimmer, one point of light per composition &#8212; the glow moment the brand is built on.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;padding:32px;border:1px solid #EFE9E1;background:linear-gradient(160deg,#FFFFFF 0%,#FAFAFB 100%)">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,#FFFFFF 0%,#F4F1EC 50%,#E8E4DE 100%)"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-family:'Bodoni Moda',serif;font-size:24px">Air</span>
+          <span style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#C9A96A">Soft gradient</span>
+        </div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Wide letterspacing, generous margins, gradients that fade rather than stop. Air is what the brand does with empty space &#8212; it lets the work breathe.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;padding:32px;border:1px solid #EFE9E1;background:linear-gradient(160deg,#FFFFFF 0%,#F8F9FA 100%)">
+        <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,#FFFFFF 0%,#DCDEE0 45%,#B9BCC0 100%)"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-family:'Bodoni Moda',serif;font-size:24px">Water</span>
+          <span style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#C9A96A">Pearl &amp; silver</span>
+        </div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Fluid curves, reflective surfaces, pearl shimmer. Governs the curve of every rounded form and the soft reflection under product imagery.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;padding:32px;border:1px solid #EFE9E1;background:linear-gradient(160deg,#FFFFFF 0%,#FBF6F4 100%)">
+        <div style="width:44px;height:44px;background:linear-gradient(140deg,#E2C1B8 0%,#B07A70 100%)"></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <span style="font-family:'Bodoni Moda',serif;font-size:24px">Earth</span>
+          <span style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#C9A96A">Rose gold</span>
+        </div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">The wordmark&#8217;s rose-to-espresso gradient. Grids, rules, and square corners &#8212; the structural layer that keeps the softness from drifting.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">05</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Identity</span>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;align-items:center;justify-content:center;padding:80px 40px;border:1px solid #EFE9E1;background:#FFFFFF">
+        <img src="./assets/zairrah-logo.png" alt="Zairrah primary logo" style="width:min(620px,100%);height:auto;display:block">
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <span style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Primary lockup &#8212; horizontal</span>
+        <span style="font-size:12px;color:#6B635C">Minimum width 180px</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:#2D2523;overflow:hidden">
+          <img src="./assets/zairrah-logo-reverse.png" alt="Zairrah reversed logo" style="width:100%;max-width:100%;height:auto;display:block">
+        </div>
+        <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Reversed &#8212; ink ground</div>
+        <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Wing stays gold. Wordmark becomes bone. Never invert the wing to white.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:#FFFFFF;overflow:hidden">
+          <img src="./assets/zairrah-mark.png" alt="Zairrah phoenix mark" style="width:auto;height:168px;max-width:100%;display:block">
+        </div>
+        <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Phoenix mark &#8212; standalone</div>
+        <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Favicon, social avatar, packaging seal, watermark on imagery at 12% opacity.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;align-items:center;justify-content:center;height:240px;padding:36px;border:1px solid #EFE9E1;background:linear-gradient(135deg,#FDFCFA 0%,#F6EDE8 35%,#EDEFF0 68%,#F7F0E3 100%);overflow:hidden">
+          <img src="./assets/zairrah-wordmark.png" alt="Zairrah wordmark" style="width:100%;max-width:100%;height:auto;display:block">
+        </div>
+        <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Wordmark only</div>
+        <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Where the mark would compete &#8212; narrow site headers, email signatures, invoice headers.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;height:240px;padding:28px;border:1px solid #EFE9E1;background:#FFFFFF;overflow:hidden">
+          <img src="./assets/zairrah-mark.png" alt="" style="height:88px;width:auto;max-width:100%;display:block;flex:0 0 auto">
+          <img src="./assets/zairrah-wordmark.png" alt="Zairrah" style="width:min(170px,100%);height:auto;display:block">
+        </div>
+        <div style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Stacked lockup</div>
+        <div style="font-size:13px;line-height:1.65;color:#6B635C;text-wrap:pretty">Square formats: signage, Instagram profile, packaging face. Mark above, wordmark centered beneath.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;padding-top:24px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#2D2523">Clear space</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Minimum clear space on all sides equals the cap height of the Z. Nothing crosses it &#8212; not photography, not a button, not a page edge.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#2D2523">Name in text</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Set as ZAIRRAH in all caps. The spaced &#8220;Z a i R r a h&#8221; treatment from the old site is retired, and the mid-word capital R with it.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#2D2523">Never</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Do not add drop shadows, outline the letterforms, stretch the lockup, recolor the wing, place the logo over a busy photograph, or separate the wing and wordmark within the same composition.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">06</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Color</span>
+    </div>
+    <div style="font-size:15px;line-height:1.75;color:#5C554F;max-width:62ch;text-wrap:pretty">The palette is drawn directly from the logo: the wing sets the golds, the wordmark gradient sets rose gold and espresso.</div>
+
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">Primary</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="height:170px;background:#FBFAF8;border:1px solid #EAE4DC"></div>
+          <div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:14px">Porcelain</span><span style="font-size:11.5px;letter-spacing:0.12em;color:#6B635C">#FBFAF8</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="height:170px;background:#C9A96A"></div>
+          <div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:14px">Champagne Gold</span><span style="font-size:11.5px;letter-spacing:0.12em;color:#6B635C">#C9A96A</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="height:170px;background:#B07A70"></div>
+          <div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:14px">Rose Gold</span><span style="font-size:11.5px;letter-spacing:0.12em;color:#6B635C">#B07A70</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="height:170px;background:#2D2523"></div>
+          <div style="display:flex;flex-direction:column;gap:3px"><span style="font-size:14px">Espresso Ink</span><span style="font-size:11.5px;letter-spacing:0.12em;color:#6B635C">#2D2523</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">Secondary &amp; support</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px">
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="height:120px;background:#B9BCC0"></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px">Silver</span><span style="font-size:11px;letter-spacing:0.1em;color:#6B635C">#B9BCC0</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="height:120px;background:#F3EEE8"></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px">Pearl</span><span style="font-size:11px;letter-spacing:0.1em;color:#6B635C">#F3EEE8</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="height:120px;background:#E3CDA4"></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px">Light Champagne</span><span style="font-size:11px;letter-spacing:0.1em;color:#6B635C">#E3CDA4</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="height:120px;background:#8B827A"></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px">Stone &#8212; surface only</span><span style="font-size:11px;letter-spacing:0.1em;color:#6B635C">#8B827A</span></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="height:120px;background:linear-gradient(135deg,#FDFCFA 0%,#F6EDE8 28%,#EDEFF0 58%,#F7F0E3 88%,#FBF8F4 100%);border:1px solid #EFE9E1"></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px">Iridescent Pearl</span><span style="font-size:11px;letter-spacing:0.1em;color:#6B635C">Gradient</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px;padding-top:12px;border-top:1px solid #EFE9E1">
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:28px">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#2D2523">Proportion</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Roughly 80% porcelain, 15% espresso ink, 5% metallics. Gold and rose gold are accents &#8212; a hairline, a number, a hover state. They are never a background fill for large areas.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:28px">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#2D2523">Legibility</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Body copy is Espresso Ink (#2D2523) or Slate (#5C554F) on Porcelain. Stone and Champagne Gold are surface and accent colors &#8212; neither passes 4.5:1 as small text. For secondary captions use #6B635C.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:28px">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#2D2523">Retired</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">The current site&#8217;s slate navy (#31324B) is discontinued. Where a dark surface is needed, use Espresso Ink.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">07</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Typography</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:18px;padding:36px;border:1px solid #EFE9E1;background:#FFFFFF">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#C9A96A">Display</div>
+        <div style="font-family:'Bodoni Moda',serif;font-size:60px;line-height:1">Bodoni Moda</div>
+        <div style="font-family:'Bodoni Moda',serif;font-size:22px;line-height:1.4;color:#5C554F">ABCDEFGHIJKLM<br>abcdefghijklm 0123456789</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#6B635C;text-wrap:pretty">High-contrast couture serif, closely matched to the logo&#8217;s letterforms. Headlines, service names, pull quotes in italic. Regular and Medium only.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px;padding:36px;border:1px solid #EFE9E1;background:#FFFFFF">
+        <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#C9A96A">Text &amp; interface</div>
+        <div style="font-family:Jost,sans-serif;font-weight:300;font-size:60px;line-height:1">Jost</div>
+        <div style="font-family:Jost,sans-serif;font-weight:300;font-size:22px;line-height:1.4;color:#5C554F">ABCDEFGHIJKLM<br>abcdefghijklm 0123456789</div>
+        <div style="font-size:13.5px;line-height:1.7;color:#6B635C;text-wrap:pretty">Geometric sans. Body copy, navigation, labels, buttons, forms. Light 300 for text, Regular 400 for interface.</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid #EFE9E1">
+      <div style="display:flex;gap:32px;align-items:baseline;padding:26px 0;border-bottom:1px solid #EFE9E1;flex-wrap:wrap">
+        <span style="flex:0 0 150px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Display / H1</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:clamp(32px,4.6vw,56px);line-height:1.1">Discover the beauty within</span>
+      </div>
+      <div style="display:flex;gap:32px;align-items:baseline;padding:26px 0;border-bottom:1px solid #EFE9E1;flex-wrap:wrap">
+        <span style="flex:0 0 150px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Section / H2</span>
+        <span style="font-family:'Bodoni Moda',serif;font-size:clamp(24px,3vw,34px);line-height:1.2">Bridal Beauty</span>
+      </div>
+      <div style="display:flex;gap:32px;align-items:baseline;padding:26px 0;border-bottom:1px solid #EFE9E1;flex-wrap:wrap">
+        <span style="flex:0 0 150px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Eyebrow</span>
+        <span style="font-family:Jost,sans-serif;font-weight:400;font-size:12px;letter-spacing:0.3em;text-transform:uppercase">Services &amp; Pricing</span>
+      </div>
+      <div style="display:flex;gap:32px;align-items:baseline;padding:26px 0;border-bottom:1px solid #EFE9E1;flex-wrap:wrap">
+        <span style="flex:0 0 150px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Body</span>
+        <span style="font-family:Jost,sans-serif;font-weight:300;font-size:17px;line-height:1.75;max-width:52ch;color:#5C554F;text-wrap:pretty">Every service begins with intention: clean prep, balanced technique, and a focus on enhancing natural features.</span>
+      </div>
+      <div style="display:flex;gap:32px;align-items:baseline;padding:26px 0;border-bottom:1px solid #EFE9E1;flex-wrap:wrap">
+        <span style="flex:0 0 150px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Quote</span>
+        <span style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:clamp(20px,2.4vw,28px);line-height:1.45;max-width:30ch;color:#5C554F;text-wrap:pretty">Hair that moves with purpose.</span>
+      </div>
+      <div style="display:flex;gap:32px;align-items:center;padding:26px 0;flex-wrap:wrap">
+        <span style="flex:0 0 150px;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Button</span>
+        <span style="display:inline-flex;align-items:center;justify-content:center;padding:15px 40px;border:1px solid #2D2523;font-family:Jost,sans-serif;font-weight:400;font-size:12px;letter-spacing:0.26em;text-transform:uppercase;color:#2D2523;cursor:pointer;transition:background 300ms ease,color 300ms ease" style-hover="background:#2D2523;color:#FBFAF8">Book Now</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">08</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Photography</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px">
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <div style="font-family:'Bodoni Moda',serif;font-size:26px;line-height:1.3">Direction</div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;gap:14px;align-items:flex-start"><span style="color:#C9A96A;font-size:13px;line-height:1.7">&#8212;</span><span style="font-size:14.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Natural or soft diffused light. No hard flash, no coloured gels.</span></div>
+          <div style="display:flex;gap:14px;align-items:flex-start"><span style="color:#C9A96A;font-size:13px;line-height:1.7">&#8212;</span><span style="font-size:14.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Neutral grounds &#8212; bone, warm grey, silk, stone. Never a busy set.</span></div>
+          <div style="display:flex;gap:14px;align-items:flex-start"><span style="color:#C9A96A;font-size:13px;line-height:1.7">&#8212;</span><span style="font-size:14.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Skin keeps texture. Retouch for consistency, never for plastic.</span></div>
+          <div style="display:flex;gap:14px;align-items:flex-start"><span style="color:#C9A96A;font-size:13px;line-height:1.7">&#8212;</span><span style="font-size:14.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Every set pairs one wide portrait with at least one macro detail.</span></div>
+          <div style="display:flex;gap:14px;align-items:flex-start"><span style="color:#C9A96A;font-size:13px;line-height:1.7">&#8212;</span><span style="font-size:14.5px;line-height:1.7;color:#5C554F;text-wrap:pretty">Warm-neutral grade across the whole library. One look, one house.</span></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <div style="font-family:'Bodoni Moda',serif;font-size:26px;line-height:1.3">Crops</div>
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px">
+          <div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="position:relative;height:210px;min-width:0"><image-slot id="zb-photo-1" shape="rect" src="./assets/mood-luminous-skin.webp" placeholder="4:5 portrait &#8212; site hero, Instagram feed"></image-slot></div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6B635C">4:5 Portrait</span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;min-width:0"><div style="position:relative;height:210px;min-width:0"><image-slot id="zb-photo-2" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="1:1 detail &#8212; lash, nail, brow macro"></image-slot></div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6B635C">1:1 Detail</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">09</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Voice</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Bodoni Moda',serif;font-size:26px;line-height:1.3">Calm, precise, unhurried.</div>
+        <div style="font-size:14.5px;line-height:1.75;color:#5C554F;max-width:44ch;text-wrap:pretty">Short declarative lines. Concrete nouns over adjectives. The work is described, not sold. No exclamation marks, no urgency tactics, no emoji.</div>
+        <div style="display:flex;flex-direction:column;gap:10px;padding-top:8px">
+          <div style="font-size:10.5px;letter-spacing:0.24em;text-transform:uppercase;color:#6B635C">Service copy pattern</div>
+          <div style="font-size:14.5px;line-height:1.75;color:#5C554F;text-wrap:pretty">Name, then three qualities. &#8220;Bridal Beauty &#8212; timeless, balanced, long-wear elegance.&#8221;</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1px;background:#EFE9E1;border:1px solid #EFE9E1">
+        <div style="background:#FFFFFF;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">We say</span>
+          <span style="font-family:'Bodoni Moda',serif;font-size:19px;line-height:1.4">Clean, sculpted, camera-ready.</span>
+        </div>
+        <div style="background:#FFFFFF;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#B9BCC0">We don&#8217;t say</span>
+          <span style="font-family:'Bodoni Moda',serif;font-size:19px;line-height:1.4;color:#6B635C">Get that flawless glam look you&#8217;ve been dreaming of!</span>
+        </div>
+        <div style="background:#FFFFFF;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">We say</span>
+          <span style="font-family:'Bodoni Moda',serif;font-size:19px;line-height:1.4">Lashes that open the eyes.</span>
+        </div>
+        <div style="background:#FFFFFF;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <span style="font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:#B9BCC0">We don&#8217;t say</span>
+          <span style="font-family:'Bodoni Moda',serif;font-size:19px;line-height:1.4;color:#6B635C">Dramatic volume lashes for the ultimate wow factor.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">10</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">In Application</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="aspect-ratio:1.75/1;background:#FFFFFF;border:1px solid #EFE9E1;display:flex;flex-direction:column;justify-content:space-between;padding:26px">
+          <img src="./assets/zairrah-logo.png" alt="" style="width:62%;max-width:190px;height:auto;display:block">
+          <div style="display:flex;flex-direction:column;gap:3px;font-size:9.5px;letter-spacing:0.12em;color:#6B635C">
+            <span style="color:#2D2523">Zairrah &#183; Esthetician &amp; Cosmetologist</span>
+            <span>1128 Nuuanu Ave, Suite 102, Honolulu HI</span>
+            <span>(808) 725-8661</span>
+          </div>
+        </div>
+        <span style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Business card &#8212; face</span>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="aspect-ratio:1.75/1;background:#2D2523;display:flex;align-items:center;justify-content:center;padding:30px;overflow:hidden">
+          <img src="./assets/zairrah-mark.png" alt="" style="width:22%;max-width:90px;height:auto;display:block">
+        </div>
+        <span style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Business card &#8212; reverse, gold foil</span>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="aspect-ratio:1.75/1;background:linear-gradient(135deg,#FDFCFA 0%,#F6EDE8 35%,#EDEFF0 68%,#F7F0E3 100%);border:1px solid #EFE9E1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:11px;padding:22px">
+          <img src="./assets/zairrah-wordmark.png" alt="" style="width:min(52%,150px);height:auto;display:block">
+          <span style="font-size:8px;letter-spacing:0.36em;text-transform:uppercase;color:#6B635C;padding-left:0.36em">Lash &#183; Nail &#183; Skin</span>
+        </div>
+        <span style="font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">Aftercare card / packaging seal</span>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px;padding-top:16px">
+      <div style="font-size:10.5px;letter-spacing:0.26em;text-transform:uppercase;color:#6B635C">Instagram grid rhythm</div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:520px">
+        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-1" shape="rect" src="./assets/mood-soft-glam.webp" placeholder="Portrait"></image-slot></div>
+        <div style="aspect-ratio:1/1;background:#FFFFFF;border:1px solid #EFE9E1;display:flex;align-items:center;justify-content:center;padding:14px"><span style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:14px;color:#6B635C;text-align:center;line-height:1.5">Skin that reflects light.</span></div>
+        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-2" shape="rect" src="./assets/mood-detail-nails.webp" placeholder="Detail"></image-slot></div>
+        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-3" shape="rect" src="./assets/mood-bridal.webp" placeholder="Bridal"></image-slot></div>
+        <div style="position:relative;aspect-ratio:1/1"><image-slot id="zb-ig-4" shape="rect" src="./assets/mood-hair.webp" placeholder="Hair"></image-slot></div>
+        <div style="aspect-ratio:1/1;background:#2D2523;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden"><img src="./assets/zairrah-mark.png" alt="" style="width:46%;max-width:46%;height:auto;display:block"></div>
+      </div>
+      <div style="font-size:13.5px;line-height:1.7;color:#6B635C;max-width:52ch;text-wrap:pretty">Every third tile is quiet &#8212; a typographic card or the phoenix mark. The grid should read as a page, not a feed.</div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:44px;padding:96px 0;border-top:1px solid #EAE4DC">
+    <div style="display:flex;align-items:baseline;gap:20px">
+      <span style="font-family:'Bodoni Moda',serif;font-size:13px;color:#6B635C">11</span>
+      <span style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#6B635C">Website Redesign</span>
+    </div>
+    <div style="font-size:15px;line-height:1.75;color:#5C554F;max-width:62ch;text-wrap:pretty">How the identity translates to zairrah.com. These are the decisions the rebuild inherits from this guide.</div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:#EAE4DC;border:1px solid #EAE4DC">
+      <div style="background:#FBFAF8;padding:32px 26px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">Structure</span>
+        <span style="font-size:14px;line-height:1.7;color:#5C554F;text-wrap:pretty">Six service pages, each with its own hero and gallery. One portfolio, filtered by service &#8212; not a single 52-image wall.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:32px 26px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">Hero</span>
+        <span style="font-size:14px;line-height:1.7;color:#5C554F;text-wrap:pretty">One full-bleed portrait, the lockup, one line of copy, one button. Nothing repeats four times.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:32px 26px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">Booking</span>
+        <span style="font-size:14px;line-height:1.7;color:#5C554F;text-wrap:pretty">A real booking flow with service, duration, and price. The current &#8220;Book Now&#8221; links back to the homepage.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:32px 26px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">Motion</span>
+        <span style="font-size:14px;line-height:1.7;color:#5C554F;text-wrap:pretty">Fades and slow reveals only, 400&#8211;600ms. Nothing bounces, slides fast, or auto-plays.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:32px 26px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">Surfaces</span>
+        <span style="font-size:14px;line-height:1.7;color:#5C554F;text-wrap:pretty">Porcelain throughout. Espresso ink for the footer and one interruption section. Metallics only as hairlines and hover states.</span>
+      </div>
+      <div style="background:#FBFAF8;padding:32px 26px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-size:10.5px;letter-spacing:0.22em;text-transform:uppercase;color:#C9A96A">Mobile</span>
+        <span style="font-size:14px;line-height:1.7;color:#5C554F;text-wrap:pretty">Designed mobile-first. Most clients arrive from Instagram. Tap targets 44px minimum, one column, persistent book button.</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:28px;padding:110px 0 40px;border-top:1px solid #EAE4DC">
+    <img src="./assets/zairrah-mark.png" alt="" style="height:78px;width:auto;display:block">
+    <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:clamp(20px,2.8vw,32px);line-height:1.4;color:#5C554F;text-align:center;max-width:22ch;text-wrap:pretty">Beauty designed to elevate your presence &#8212; not change it.</div>
+    <img src="./assets/zairrah-wordmark.png" alt="Zairrah" style="width:min(220px,60%);height:auto;display:block;padding-top:10px">
+    <div style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center;font-size:10.5px;letter-spacing:0.2em;text-transform:uppercase;color:#6B635C">
+      <span>1128 Nuuanu Ave, Suite 102</span><span>Honolulu HI 96817</span><span>(808) 725-8661</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>

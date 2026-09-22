@@ -14,6 +14,12 @@ const nextConfig = {
   turbopack: {
     root: __dirname,
   },
+  async rewrites() {
+    return [
+      { source: '/brand-guide', destination: '/brand-guide/index.html' },
+      { source: '/brand-guide/', destination: '/brand-guide/index.html' },
+    ]
+  },
 }
 
 export default nextConfig

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zairrah Beauty · Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #2D2523;
+    --muted: #6B635C;
+    --body: #5C554F;
+    --bone: #FBFAF8;
+    --line: #E2DCD3;
+    --gold: #C9A96A;
+    --gold-link: #A8874B;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bone);
+    color: var(--ink);
+    font-family: Jost, sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  .page {
+    max-width: 1120px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 36px 40px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+  }
+  .hero img { width: min(300px, 72%); height: auto; display: block; }
+  .rule { width: 88px; height: 1px; background: #E3CDA4; }
+  .lede {
+    font-family: "Bodoni Moda", serif;
+    font-style: italic;
+    font-size: clamp(20px, 2.8vw, 30px);
+    line-height: 1.35;
+    color: var(--body);
+    max-width: 22ch;
+    text-wrap: pretty;
+  }
+  .sub {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--body);
+    max-width: 42ch;
+    text-wrap: pretty;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+  }
+  .card:hover,
+  .card:focus-visible {
+    border-color: var(--gold);
+    box-shadow: 0 22px 44px -28px rgba(45, 37, 35, 0.45);
+  }
+  .card:focus-visible { outline: 2px solid var(--gold-link); outline-offset: 3px; }
+  .media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #F3EEE8;
+  }
+  .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 420ms ease;
+  }
+  .card:hover .media img,
+  .card:focus-visible .media img { transform: scale(1.03); }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px 24px 24px;
+  }
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .kicker em {
+    font-style: normal;
+    color: var(--gold);
+    margin-right: 12px;
+  }
+  h2 {
+    margin: 0;
+    font-family: "Bodoni Moda", serif;
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .body p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--body);
+    text-wrap: pretty;
+  }
+  .cta {
+    margin-top: 8px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold-link);
+  }
+  .card:hover .cta { color: var(--ink); }
+  .foot {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  @media (max-width: 760px) {
+    .page { padding: 36px 22px 56px; gap: 40px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="top">
+      <span>Zairrah Beauty</span>
+      <span>Honolulu, Hawai&#8216;i</span>
+      <span>2026 Edition</span>
+    </div>
+
+    <header class="hero">
+      <img src="/brand-guide/assets/zairrah-logo.png" alt="Zairrah">
+      <div class="rule" aria-hidden="true"></div>
+      <p class="lede">The house, in two books.</p>
+      <p class="sub">Identity rules and the images that set the temperature. Open the document you need.</p>
+    </header>
+
+    <nav class="grid" aria-label="Brand documents">
+      <a class="card" href="/brand-guide/Zairrah-Brand-Guide.dc.html">
+        <div class="media">
+          <img src="/brand-guide/assets/mood-luminous-skin.webp" alt="">
+        </div>
+        <div class="body">
+          <div class="kicker"><em>01</em> Identity</div>
+          <h2>Brand Guide</h2>
+          <p>Logo, color, type, photography, and voice. The system every other surface follows.</p>
+          <span class="cta">Open the guide</span>
+        </div>
+      </a>
+
+      <a class="card" href="/brand-guide/Zairrah-Brand-Applications.dc.html">
+        <div class="media">
+          <img src="/brand-guide/assets/storefront-glass.webp" alt="">
+        </div>
+        <div class="body">
+          <div class="kicker"><em>02</em> Applied</div>
+          <h2>Moodboard</h2>
+          <p>Storefront, print, and packaging. How the mark sits in the world.</p>
+          <span class="cta">Open the moodboard</span>
+        </div>
+      </a>
+    </nav>
+
+    <div class="foot">
+      <span>Soft Glam · Hair · Bridal · Lashes · Nails · Esthetics</span>
+      <span>Internal use</span>
+    </div>
+  </div>
+</body>
+</html>
